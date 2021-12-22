@@ -21,12 +21,22 @@ class Movie {
         $this->author = $author;
     }
 
+    public function bestMovie() {
+        if ($this->title == 'Austin Powers') {
+            return "<h2>Best movie ever.</h2>";
+        } else {
+            return "<h2>A great film, but not like the greatest.</h2>";
+        }
+    }
+
 }
 
 $movie1 = new Movie
 ('Austin Powers', 'Comedy', '2002', 'Jay Roach');
 
 var_dump($movie1);
+
+echo $movie1->bestMovie();
 
 echo '<hr>';
 
@@ -35,4 +45,8 @@ $movie2 = new Movie
 
 var_dump($movie2);
 
+echo $movie2->bestMovie();
+
 echo '<hr>';
+
+

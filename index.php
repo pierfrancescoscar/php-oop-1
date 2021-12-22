@@ -33,6 +33,6 @@ echo '<hr>';
 $movie2 = new Movie
 ('I Origin', 'Dramatic', '2014', 'Mike Cahill');
 
-var_dump($movie1);
+var_dump($movie2);
 
 echo '<hr>';
